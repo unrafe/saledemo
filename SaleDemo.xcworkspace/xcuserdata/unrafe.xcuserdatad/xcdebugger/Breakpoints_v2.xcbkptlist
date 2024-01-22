@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8029BBE5-A0D9-4557-A335-4DA431A1D538"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E7AAC8FF-CDB2-41EB-90B9-5317B95EEBCF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SaleDemo/Base&amp;Root/RootTabBarController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "subscribe()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E7AAC8FF-CDB2-41EB-90B9-5317B95EEBCF - fb6947ccd15eaa16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SaleDemo.RootTabBarController.subscribe() -&gt; ()"
+                  moduleName = "SaleDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unrafe/Documents/Works/Tutorials/Task/SaleHere/SaleDemo/SaleDemo/SaleDemo/Base&amp;Root/RootTabBarController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "508">
+               </Location>
+               <Location
+                  uuid = "E7AAC8FF-CDB2-41EB-90B9-5317B95EEBCF - 3c168fbe4d02ead1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SocketIO.SocketAnyEvent) -&gt; () in SaleDemo.RootTabBarController.subscribe() -&gt; ()"
+                  moduleName = "SaleDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unrafe/Documents/Works/Tutorials/Task/SaleHere/SaleDemo/SaleDemo/SaleDemo/Base&amp;Root/RootTabBarController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

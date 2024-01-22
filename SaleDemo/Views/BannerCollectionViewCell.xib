@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BannerCollectionViewCell" id="gTV-IL-0wX" customClass="BannerCollectionViewCell" customModule="SaleDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ba1-uY-4I7">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="240"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner2" translatesAutoresizingMaskIntoConstraints="NO" id="GMd-QI-vqv">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="240"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GMd-QI-vqv" firstAttribute="leading" secondItem="ba1-uY-4I7" secondAttribute="leading" id="KAa-aF-6hk"/>
+                            <constraint firstAttribute="trailing" secondItem="GMd-QI-vqv" secondAttribute="trailing" id="aLg-lJ-AAR"/>
+                            <constraint firstAttribute="bottom" secondItem="GMd-QI-vqv" secondAttribute="bottom" id="aTX-0a-ac6"/>
+                            <constraint firstItem="GMd-QI-vqv" firstAttribute="top" secondItem="ba1-uY-4I7" secondAttribute="top" id="xDW-gh-vdf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ba1-uY-4I7" secondAttribute="bottom" id="GhG-0B-L5d"/>
+                <constraint firstAttribute="trailing" secondItem="ba1-uY-4I7" secondAttribute="trailing" id="i1z-AK-qYR"/>
+                <constraint firstItem="ba1-uY-4I7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nJr-kE-PZH"/>
+                <constraint firstItem="ba1-uY-4I7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xak-cW-o5c"/>
+            </constraints>
+            <size key="customSize" width="408" height="277"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="0.5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="frameView" destination="ba1-uY-4I7" id="rk6-fN-W6x"/>
+                <outlet property="imageView" destination="GMd-QI-vqv" id="Md0-Mc-bqy"/>
+            </connections>
+            <point key="canvasLocation" x="360.86956521739131" y="175.78125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="banner2" width="1765" height="1258"/>
+    </resources>
+</document>

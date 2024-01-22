@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AchievementCollectionViewCell" id="CSq-GR-rnS" customClass="AchievementCollectionViewCell" customModule="SaleDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCc-hN-oEV">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="img_achievement" translatesAutoresizingMaskIntoConstraints="NO" id="Oej-Si-nw0">
+                                <rect key="frame" x="20" y="20" width="210" height="189"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Achievement" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="J7d-BR-chw">
+                                <rect key="frame" x="10" y="219" width="230" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Oej-Si-nw0" secondAttribute="trailing" constant="20" id="Dhc-DX-5VM"/>
+                            <constraint firstAttribute="trailing" secondItem="J7d-BR-chw" secondAttribute="trailing" constant="10" id="JeB-Xo-KCb"/>
+                            <constraint firstItem="Oej-Si-nw0" firstAttribute="leading" secondItem="ZCc-hN-oEV" secondAttribute="leading" constant="20" id="ObJ-QG-fbq"/>
+                            <constraint firstAttribute="bottom" secondItem="J7d-BR-chw" secondAttribute="bottom" constant="15" id="SbB-dM-BbF"/>
+                            <constraint firstItem="J7d-BR-chw" firstAttribute="leading" secondItem="ZCc-hN-oEV" secondAttribute="leading" constant="10" id="eTF-Fo-09b"/>
+                            <constraint firstItem="Oej-Si-nw0" firstAttribute="top" secondItem="ZCc-hN-oEV" secondAttribute="top" constant="20" id="fnJ-N1-T9C"/>
+                            <constraint firstItem="J7d-BR-chw" firstAttribute="top" secondItem="Oej-Si-nw0" secondAttribute="bottom" constant="10" id="h4j-cP-TKG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="vc7-10-Ckf"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ZCc-hN-oEV" secondAttribute="trailing" id="7Kh-3g-arO"/>
+                <constraint firstAttribute="bottom" secondItem="ZCc-hN-oEV" secondAttribute="bottom" id="CcI-EM-gWk"/>
+                <constraint firstItem="ZCc-hN-oEV" firstAttribute="top" secondItem="CSq-GR-rnS" secondAttribute="top" id="Dph-1A-hgS"/>
+                <constraint firstItem="ZCc-hN-oEV" firstAttribute="leading" secondItem="CSq-GR-rnS" secondAttribute="leading" id="Mia-sT-YQI"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" red="0.62588595359999999" green="0.13205142319999999" blue="0.078949101899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="frameView" destination="ZCc-hN-oEV" id="vE0-o7-bs9"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="117"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_achievement" width="100" height="100"/>
+    </resources>
+</document>

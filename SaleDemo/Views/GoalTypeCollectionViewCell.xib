@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GoalTypeCollectionViewCell" id="gTV-IL-0wX" customClass="GoalTypeCollectionViewCell" customModule="SaleDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="195"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="195"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ba1-uY-4I7">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="195"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="ic_baggage" translatesAutoresizingMaskIntoConstraints="NO" id="UoX-Qg-xbi">
+                                <rect key="frame" x="5" y="5" width="185" height="161"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUd-cA-wrx">
+                                <rect key="frame" x="5" y="171" width="185" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UoX-Qg-xbi" firstAttribute="top" secondItem="ba1-uY-4I7" secondAttribute="top" constant="5" id="Q2y-fr-m8J"/>
+                            <constraint firstItem="UoX-Qg-xbi" firstAttribute="leading" secondItem="ba1-uY-4I7" secondAttribute="leading" constant="5" id="TPZ-Jf-IAx"/>
+                            <constraint firstAttribute="bottom" secondItem="KUd-cA-wrx" secondAttribute="bottom" constant="8" id="n1N-yn-oUb"/>
+                            <constraint firstItem="KUd-cA-wrx" firstAttribute="leading" secondItem="ba1-uY-4I7" secondAttribute="leading" constant="5" id="qcG-ci-duC"/>
+                            <constraint firstAttribute="trailing" secondItem="KUd-cA-wrx" secondAttribute="trailing" constant="5" id="rgq-RR-cO2"/>
+                            <constraint firstItem="KUd-cA-wrx" firstAttribute="top" secondItem="UoX-Qg-xbi" secondAttribute="bottom" constant="5" id="tDk-rD-bxd"/>
+                            <constraint firstAttribute="trailing" secondItem="UoX-Qg-xbi" secondAttribute="trailing" constant="5" id="zyQ-i9-QbZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ba1-uY-4I7" secondAttribute="bottom" id="GhG-0B-L5d"/>
+                <constraint firstAttribute="trailing" secondItem="ba1-uY-4I7" secondAttribute="trailing" id="i1z-AK-qYR"/>
+                <constraint firstItem="ba1-uY-4I7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nJr-kE-PZH"/>
+                <constraint firstItem="ba1-uY-4I7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xak-cW-o5c"/>
+            </constraints>
+            <size key="customSize" width="195" height="190"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" red="0.62588595359999999" green="0.13205142319999999" blue="0.078949101899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="frameView" destination="ba1-uY-4I7" id="rk6-fN-W6x"/>
+            </connections>
+            <point key="canvasLocation" x="97.826086956521749" y="95.424107142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_baggage" width="100" height="100"/>
+    </resources>
+</document>
